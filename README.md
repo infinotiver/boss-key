@@ -1,6 +1,6 @@
 # Boss Key
 
-Quick-hide specific applications with a single hotkey. Perfect for hiding work windows instantly.
+Quick-hide specific applications with a single hotkey. Perfect for hiding gaming/social media windows instantly.
 
 ## Usage
 
@@ -51,3 +51,6 @@ activate_on_show = 0
 3 = spotify.exe
 ```
 List executables (with `.exe`) to control. Add as many as needed using sequential numbers.
+
+## License
+MIT
