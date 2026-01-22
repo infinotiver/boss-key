@@ -6,7 +6,6 @@ Quick-hide specific applications with a single hotkey. Perfect for hiding gaming
 [Setup Instructions](#setup-instructions) •
 [License](#license)
 
-
 ## Configuration (`config.ini`)
 
 <details>
@@ -19,13 +18,13 @@ bosskey = ^!b
 
 Define your hotkey using AutoHotkey syntax:
 
-* `^` = Ctrl
-* `!` = Alt
-* `+` = Shift
-* `#` = Win
+- `^` = Ctrl
+- `!` = Alt
+- `+` = Shift
+- `#` = Win
 
 Examples: `^!b` (Ctrl+Alt+B), `#h` (Win+H), `F12`
-View full documentation at [AutoHotkey Hotkeys](https://www.autohotkey.com/docs).
+View full documentation at [AutoHotkey v1 Hotkeys](https://www.autohotkey.com/docs/v1/Hotkeys.htm).
 
 </details>
 
@@ -41,15 +40,15 @@ activate_on_show = 0
 
 **Hide behavior:**
 
-* `minimize_on_hide = 1`: Minimize windows before hiding (default)
-* `minimize_on_hide = 0`: Hide instantly without minimizing (eliminates flashing)
+- `minimize_on_hide = 1`: Minimize windows before hiding (default)
+- `minimize_on_hide = 0`: Hide instantly without minimizing (eliminates flashing)
 
 **Show behavior:**
 
-* `restore_on_show = 1`: Restore windows from minimized state
-* `restore_on_show = 0`: Keep windows in their current state (default)
-* `activate_on_show = 1`: Bring windows to foreground
-* `activate_on_show = 0`: Show windows passively (default, no flashing)
+- `restore_on_show = 1`: Restore windows from minimized state
+- `restore_on_show = 0`: Keep windows in their current state (default)
+- `activate_on_show = 1`: Bring windows to foreground
+- `activate_on_show = 0`: Show windows passively (default, no flashing)
 
 **Tip:** Set all flags to `0` for the smoothest, flash-free experience.
 
@@ -75,23 +74,24 @@ List executables (with `.exe`) to control. Add as many as needed using sequentia
 
 **Requirements**:
 
-* Windows 10 or later
-* One of the following:
+- Windows 10 or later
+- AutoHotkey v1.1 installed (required to run both `.ahk` and `.exe`)
 
-  * AutoHotkey v1.1 installed
-  * Or the precompiled `boss-key.exe`
+Note: This script targets AutoHotkey v1 (not v2).
 
 <details>
 <summary><strong>Option A: Using the Executable (Recommended)</strong></summary>
 
-1. Download `zip` file
-2. Extract files to a directory
-3. Create or edit `config.ini` in the same directory
-4. Configure your hotkey and target applications
-5. Run `boss-key.exe`
-6. Press your configured hotkey to toggle visibility
+1. Install AutoHotkey v1.1 from
+  [https://www.autohotkey.com/](https://www.autohotkey.com)
+2. Download `zip` file
+3. Extract files to a directory
+4. Create or edit `config.ini` in the same directory
+5. Configure your hotkey and target applications
+6. Run `boss-key.exe`
+7. Press your configured hotkey to toggle visibility
 
-No additional dependencies required.
+Note: AutoHotkey v1.1 must be installed.
 
 </details>
 
@@ -110,10 +110,9 @@ No additional dependencies required.
 <details>
 <summary><strong>Configuration File Placement</strong></summary>
 
-* `config.ini` must be located in the same directory as:
-
-  * `boss-key.exe` or
-  * `boss-key.ahk`
+- `config.ini` must be located in the same directory as:
+  - `boss-key.exe` or
+  - `boss-key.ahk`
 
 The application will not search other paths.
 
@@ -122,10 +121,10 @@ The application will not search other paths.
 <details>
 <summary><strong>First-Time Setup Checklist</strong></summary>
 
-* Ensure `config.ini` exists
-* Verify hotkey syntax is valid
-* Confirm target executables are running
-* Avoid hotkeys already used by the system or other apps
+- Ensure `config.ini` exists
+- Verify hotkey syntax is valid
+- Confirm target executables are running
+- Avoid hotkeys already used by the system or other apps
 
 </details>
 
@@ -134,4 +133,3 @@ The application will not search other paths.
 ## License
 
 MIT
-
